@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viraj Satav | Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Segoe UI", sans-serif;
+            background: linear-gradient(135deg, #eef2f3, #d9e4f5);
+            color: #333;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* ===== Animations ===== */
+        @keyframes fadeDown {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeUp {
+            from {
+                opacity: 0;
+                transform: translateY(40px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* ===== Header ===== */
+        header {
+            background: linear-gradient(135deg, #1d2671, #c33764);
+            color: white;
+            padding: 70px 20px;
+            text-align: center;
+            animation: fadeDown 1.2s ease;
+        }
+
+        header h1 {
+            font-size: 42px;
+            letter-spacing: 1px;
+        }
+
+        header p {
+            font-size: 18px;
+            margin-top: 12px;
+            opacity: 0.9;
+        }
+
+        /* ===== Section ===== */
+        section {
+            max-width: 1000px;
+            margin: auto;
+            padding: 50px 20px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        /* ===== Cards ===== */
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            animation: fadeUp 1s ease forwards;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:nth-child(1) { animation-delay: 0.1s; }
+        .card:nth-child(2) { animation-delay: 0.2s; }
+        .card:nth-child(3) { animation-delay: 0.3s; }
+        .card:nth-child(4) { animation-delay: 0.4s; }
+        .card:nth-child(5) { animation-delay: 0.5s; }
+
+        .card:hover {
+            transform: translateY(-10px) scale(1.02);
+            box-shadow: 0 18px 40px rgba(29, 38, 113, 0.25);
+        }
+
+        h2 {
+            color: #1d2671;
+            margin-bottom: 15px;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        ul li {
+            margin-bottom: 8px;
+        }
+
+        /* ===== Footer ===== */
+        footer {
+            background: #111;
+            color: #ccc;
+            text-align: center;
+            padding: 25px;
+            font-size: 14px;
+            animation: fadeUp 1.2s ease;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Viraj Satav</h1>
+        <p>First Year B.Tech | AI & ML | Zeal College of Engineering</p>
+    </header>
+
+    <section>
+        <div class="grid">
+
+            <div class="card">
+                <h2>About Me</h2>
+                <p>
+                    I am Viraj Satav, a first-year B.Tech student specializing in
+                    Artificial Intelligence and Machine Learning at Zeal College.
+                    I enjoy learning new technologies and exploring how AI can be
+                    applied to real-world problems.
+                </p>
+            </div>
+
+            <div class="card">
+                <h2>Education</h2>
+                <ul>
+                    <li><strong>B.Tech in AI & ML</strong></li>
+                    <li>Zeal College of Engineering</li>
+                    <li>First Year</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h2>Skills</h2>
+                <ul>
+                    <li>HTML & CSS</li>
+                    <li>Basic Python</li>
+                    <li>C Programming (Basics)</li>
+                    <li>Problem Solving</li>
+                    <li>AI & Machine Learning Fundamentals</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h2>Projects</h2>
+                <ul>
+                    <li>Personal Portfolio Website</li>
+                    <li>Basic Python Mini Projects</li>
+                    <li>College Practice Programs</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h2>Contact</h2>
+                <p>Email</p>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 Viraj Satav</p>
+    </footer>
+
+</body>
+</html>
